@@ -24,7 +24,8 @@ body {
 
 .card {
     background-color: var(--dk-gray-blue);
-    height: 310px;
+    position: relative;
+    min-height: 270px;
     width: 90%;
     margin-top: 120px;
     border-radius: 10px;
@@ -42,6 +43,8 @@ h6 {
 
 h2 {
     color: var(--lt-cyan);
+    padding: 0 20px;
+    align-items: center;
 }
 
 .divider-one {
@@ -50,11 +53,15 @@ h2 {
 
 .dices
 {
+    position: absolute;
     background-color: var(--green);
     width: 65px;
     height: 65px;
     border-radius: 50%;
-    transform: translate(135px, 120px);
+    left: 40%;
+    bottom: -31px;
+    /* transform: translate(43px, 20px); */
+    /* right: 180px; */
     cursor: pointer;
     transition: .5s ease-in-out;
 }
@@ -91,6 +98,14 @@ box-shadow: 0px 0px 11px 5px rgba(101,212,146,1);
    } 
 
    .dices {
-    transform: translate(192px, 138px);
+    /* transform: translate(-10px, 54px); */
+    left: 43%;
    }
+
+h2 {
+    padding: 0 30px;
+}
+.divider-one {
+    margin-top: 40px;
+}
 }
